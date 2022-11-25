@@ -6,7 +6,7 @@ const Transaction = ({ info, removeTransaction }) => {
     return (
       <View style={styles.container}>
         <Text>{amount} - {description} - {date}</Text>
-        <Button title='Delete' onPress={() => removeTransaction({id})} />
+        <Button title='Delete' onPress={() => removeTransaction(id)} />
       </View>
     )
 };
